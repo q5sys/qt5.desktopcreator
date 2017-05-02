@@ -105,10 +105,10 @@ keywordfield = "Keywords=" + keywords;
 
 void MainWindow::save(){
 setDesktopFields();
-#QString path = QDir::homePath();
+//QString path = QDir::homePath();
 
 #ifdef __FreeBSD__
-QString path = QDir::canonicalPath( "/usr/local/share/applications" );
+QString path = "/usr/local/share/applications";
 #else
 QString path = QDir::homePath();
 #endif
